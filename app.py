@@ -152,5 +152,21 @@ else:
     st.info("Please upload a CSV file to continue")
 
 
+st.warning("""
+**Dataset Requirement Notice**
+
+To use this dashboard with your own data, the uploaded CSV must contain these mandatory columns:
+
+• User_ID
+• Watch_Time_Hours
+• Last_Login (valid date format)
+• Subscription_Type
+• Country
+
+The segmentation logic and K-Means clustering are built using these fields.
+Missing or renamed columns may lead to errors or incorrect insights.
+""")
+
+
 
 
