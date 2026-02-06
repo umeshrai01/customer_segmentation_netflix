@@ -102,3 +102,20 @@ streamlit run app.py
 * A/B test discount effectiveness
 * Automated daily pipeline
 * Multi-genre engagement features
+
+
+## ⚠️ Dataset Requirements & Disclaimer
+
+This dashboard is designed for streaming-style user analytics.
+If you upload a personal or external dataset, it **must include** the following columns:
+
+| Column            | Purpose                 |
+| ----------------- | ----------------------- |
+| User_ID           | Unique user identifier  |
+| Watch_Time_Hours  | Engagement metric       |
+| Last_Login        | Used to compute recency |
+| Subscription_Type | Plan-based analysis     |
+
+Feature engineering, segmentation rules, and K-Means clustering depend on these fields.
+Datasets without these columns or with different formats may produce inaccurate results or runtime errors.
+
